@@ -6,3 +6,10 @@ function startUI(time, text)
 		text = text
 	})
 end
+
+function stopUI() 
+	SendNUIMessage({
+		type = "ui",
+		display = false,
+	})
+end
